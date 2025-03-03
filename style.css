@@ -5,3 +5,76 @@
     font-weight: 400;
     font-style: normal;
 }
+/* #FF900E #424242 Dark 02, #727272 Dark-03*/
+
+/*! Shared Styles  */
+.display-flex {
+    display: flex;
+}
+.text-gray {
+    color: #424242;
+}
+.text-light-gray {
+    color: #727272;
+}
+.btn-primary {
+    background-color: #ff900e;
+    color: #ffffff;
+    padding: 20px 24px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+}
+/*! Header Styles  */
+.bg-light {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+/*! Navbar Related Styles */
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+.brand {
+    font-weight: 700;
+    font-size: 3rem;
+}
+.nav-item {
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.nav-links {
+    text-decoration: none;
+    font-weight: 500;
+}
+.navbar,
+.banner {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+/*! Banner Related Styles */
+.banner-content {
+    max-width: 54rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.banner-title {
+    font-weight: 700;
+    font-size: 4rem;
+}
+.banner-image {
+    width: 100%;
+}
+
+/*! Responsive Media Query */
+@media screen and (max-width: 36rem) {
+    .navbar,
+    .nav-links {
+        flex-direction: column;
+        list-style: none;
+        gap: 1rem;
+    }
+}
