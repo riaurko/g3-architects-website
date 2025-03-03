@@ -101,12 +101,32 @@ main > section {
     font-weight: 500;
 }
 
-/*! Responsive Media Query */
+/*! Responsive Media Query for Small Devices */
 @media screen and (max-width: 36rem) {
     .navbar,
-    .nav-links {
+    .nav-links,
+    .teams {
         flex-direction: column;
         list-style: none;
         gap: 1rem;
+    }
+    .team-img-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features {
+        margin-left: 1.25rem;
+    }
+}
+
+/*! Responsive Media Query for Medium Devices */
+@media screen and (min-width: 36rem) and (max-width: 62rem) {
+    .teams {
+        flex-direction: column;
+    }
+    .our-features {
+        margin: 4rem auto;
+    }
+    .feature-description {
+        margin-bottom: 2rem;
     }
 }
