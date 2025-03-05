@@ -136,12 +136,17 @@ main > section {
         list-style: none;
         gap: 1rem;
     }
-    .team-img-container {
+    .team-img-container,
+    .facts-container {
         grid-template-columns: repeat(1, 1fr);
     }
     .our-features {
         margin-left: 1.25rem;
     }
+}
+.facts-container {
+    justify-items: center;
+    gap: 1.5rem;
 }
 .fact-description {
     max-width: 33.75rem;
@@ -157,5 +162,8 @@ main > section {
     }
     .feature-description {
         margin-bottom: 2rem;
+    }
+    .facts-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
