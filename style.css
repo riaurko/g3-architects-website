@@ -125,6 +125,17 @@ main > section {
     margin: 0px;
     margin-top: 0px;
 }
+#experience-badge {
+    padding: 2.625rem 2.625rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -6.25rem;
+    margin-top: -8rem;
+}
+#experience-year {
+    font-size: 4rem;
+    font-weight: 700;
+}
 
 /*! Some facts Related Styles */
 .facts-container {
