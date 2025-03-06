@@ -7,6 +7,10 @@
 }
 /* #FF900E #424242 Dark 02, #727272 Dark-03*/
 
+body {
+    margin: 0;
+    padding: 0;
+}
 /*! Shared Styles  */
 .display-flex {
     display: flex;
@@ -100,6 +104,26 @@ main > section {
 
 #quick-list {
     font-weight: 500;
+}
+/*! Features Section Related Styles */
+.features {
+    gap: 8.25rem;
+}
+#feature-section-title {
+    border-left: 0.313rem solid #ff900e;
+    padding-left: 1.25rem;
+}
+.feature-card {
+    padding: 2.6rem;
+    box-shadow: 0 0.25rem 1.875rem 0 rgba(0, 0, 0, 0.06);
+    border-radius: 0.5rem;
+}
+.feature-card,
+.feature-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 0px;
+    margin-top: 0px;
 }
 
 /*! Some facts Related Styles */
