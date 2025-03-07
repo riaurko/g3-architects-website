@@ -126,16 +126,19 @@ main > section {
     margin-top: 0px;
 }
 #experience-badge {
-    padding: 2.625rem 2.625rem;
+    padding: 2.625rem;
     font-size: 1.5rem;
     font-weight: 500;
     margin-left: -6.25rem;
-    margin-top: -8rem;
+    margin-top: -7rem;
 }
 #experience-year {
     font-size: 4rem;
     font-weight: 700;
 }
+/* .feature-image img {
+    width: 100%;
+} */
 
 /*! Some facts Related Styles */
 .facts-container {
@@ -176,11 +179,23 @@ main > section {
 .sponsor-companies > img {
     filter: grayscale(100%);
 }
+
+/*! Footer Related Styles */
+.footer-text {
+    background-color: #fff4e7;
+    padding: 2.5rem 0;
+    border-radius: 0.5rem;
+    max-width: 90rem;
+    margin: 9rem auto;
+    text-align: center;
+    margin-bottom: 2rem;
+}
 /*! Responsive Media Query for Small Devices */
 @media screen and (max-width: 36rem) {
     .navbar,
     .nav-links,
-    .teams {
+    .teams,
+    .features {
         flex-direction: column;
         list-style: none;
         gap: 1rem;
@@ -193,19 +208,30 @@ main > section {
     .our-features {
         margin-left: 1.25rem;
     }
-}
-.facts-container,
-.sponsor-companies {
-    justify-items: center;
-    gap: 1.5rem;
-}
-.fact-description {
-    max-width: 33.75rem;
+    .facts-container,
+    .sponsor-companies {
+        justify-items: center;
+        gap: 1.5rem;
+    }
+    .fact-description {
+        max-width: 33.75rem;
+    }
+    #experience-badge {
+        margin-top: 1.25rem;
+        margin-left: 2rem;
+    }
+    .footer-text {
+        width: 90%;
+    }
+    .feature-image img {
+        width: 100%;
+    }
 }
 
 /*! Responsive Media Query for Medium Devices */
 @media screen and (min-width: 36rem) and (max-width: 62rem) {
-    .teams {
+    .teams,
+    .features {
         flex-direction: column;
     }
     .our-features {
@@ -216,12 +242,24 @@ main > section {
     }
     .facts-container {
         grid-template-columns: repeat(2, 1fr);
+        place-items: center;
     }
     .sponsor-companies {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
         gap: 1.5rem;
+        place-items: center;
     }
     .sponsor-info > p {
         width: 100%;
+    }
+    .feature-image img {
+        width: 100%;
+    }
+    #experience-badge {
+        margin-top: 1.25rem;
+        margin-left: 1.25rem;
+    }
+    .footer-text {
+        width: 90%;
     }
 }
